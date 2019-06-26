@@ -7,11 +7,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/customer_creat")
+@WebServlet("/test")
 public class CustomerCreateServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //TODO
+        req.getRequestDispatcher("index.jsp").forward(req, resp);
     }
 
     @Override
