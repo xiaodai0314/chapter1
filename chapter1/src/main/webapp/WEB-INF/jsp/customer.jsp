@@ -8,6 +8,7 @@
   use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page isELIgnored="false" %>
 <c:set var="BASE" value="${pageContext.request.contextPath}" />
 <html>
 <head>
